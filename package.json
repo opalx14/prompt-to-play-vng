@@ -1,0 +1,34 @@
+{
+  "name": "echo-relay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "kill:3999": "sh -c 'pids=$(lsof -tiTCP:3999 -sTCP:LISTEN 2>/dev/null); if [ -n \"$pids\" ]; then kill $pids; sleep 1; fi'",
+    "predev": "pnpm kill:3999",
+    "dev": "next dev -p 3999",
+    "build": "next build",
+    "prestart": "pnpm kill:3999",
+    "start": "next start -p 3999",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "pnpm kill:3999 && playwright test",
+    "capture:assets": "pnpm kill:3999 && playwright test -c playwright.capture.config.ts",
+    "verify": "pnpm test && pnpm typecheck && pnpm lint && pnpm build && pnpm test:e2e"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.6",
+    "typescript": "5.7.3",
+    "vitest": "^3.2.4"
+  }
+}

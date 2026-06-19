@@ -1,0 +1,41 @@
+# Dependencies and package-manager cache
+node_modules/
+.pnpm-store/
+
+# Next.js and deployment output
+.next/
+out/
+.vercel/
+
+# Build, test and tool output
+build/
+dist/
+coverage/
+playwright-report/
+test-results/
+.capture-results/
+.turbo/
+.cache/
+*.tsbuildinfo
+
+# Local environment and secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS and editor settings
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local reference material only
+test/
