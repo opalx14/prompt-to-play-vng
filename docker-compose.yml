@@ -1,0 +1,11 @@
+services:
+  prompt-game:
+    build: .
+    container_name: prompt-game
+    ports:
+      - "3200:3200"
+    environment:
+      - NODE_ENV=production
+      - PORT=3200
+      - HOSTNAME=0.0.0.0
+    restart: always
