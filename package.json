@@ -2,6 +2,7 @@
   "name": "echo-relay",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "kill:3999": "sh -c 'pids=$(lsof -tiTCP:3999 -sTCP:LISTEN 2>/dev/null); if [ -n \"$pids\" ]; then kill $pids; sleep 1; fi'",
     "predev": "pnpm kill:3999",
