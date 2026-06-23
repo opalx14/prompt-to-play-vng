@@ -9,12 +9,15 @@ Một input — một state — một kết quả. Không backend, không tài k
 ## Preview
 
 <p align="center">
-  <video src="submission/demo/game-demo.mp4" controls width="720"></video>
+  <video src="https://raw.githubusercontent.com/opalx14/prompt-to-play-vng/main/submission/demo/game-demo.mp4" controls width="720" poster="submission/demo/game-demo-poster.jpg"></video>
 </p>
 
 <p align="center">
-  <em>Demo gameplay — Echo Relay (720p, ~2 phút)</em>
+  <em>Demo gameplay — Echo Relay (720p, ~2 phút, 4.9 MB)</em><br>
+  <a href="submission/demo/game-demo.mp4">⬇ Tải video MP4</a> · <a href="https://raw.githubusercontent.com/opalx14/prompt-to-play-vng/main/submission/demo/game-demo.mp4">Mở trực tiếp</a>
 </p>
+
+![Watch the demo](submission/demo/game-demo-poster.jpg)
 
 ![Arrival level](submission/screenshots/01-arrival.png)
 
